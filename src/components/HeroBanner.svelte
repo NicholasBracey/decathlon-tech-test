@@ -49,6 +49,37 @@
   </div>
 </section>
 
+<!-- test -->
+<MediaQuery query="(min-width: 1281px)" let:matches>
+	{#if matches}
+	<Image
+            src="/images/getreadywrapup-mobile.png"
+            alt="coats"
+            class="img-fluid"
+          />
+	{/if}
+</MediaQuery>
+
+<MediaQuery query="(min-width: 481px) and (max-width: 1280px)" let:matches>
+	{#if matches}
+	<Image
+            src="/images/getreadywrapup-mobile.png"
+            alt="coats"
+            class="img-fluid"
+          />
+	{/if}
+</MediaQuery>
+
+<MediaQuery query="(max-width: 480px)" let:matches>
+	{#if matches}
+	<Image
+            src="/images/getreadywrapup-desktop.png"
+            alt="coats"
+            class="img-fluid"
+          />
+	{/if}
+</MediaQuery>
+
 <!----------------STYLE----------------------->
 <style>
   section {
