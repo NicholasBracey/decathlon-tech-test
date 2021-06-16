@@ -22,63 +22,37 @@
         </a>
       </button>
     </div>
-    <!-- mobile image -->
-    <MediaQuery query="(max-width: 600px)" let:matches>
+    <MediaQuery query="(min-width: 1281px)" let:matches>
       {#if matches}
-        
-          <Image
-            src="/images/getreadywrapup-mobile.png"
-            alt="coats"
-            class="img-fluid"
-          />
-        
+        <Image
+          src="/images/getreadywrapup-mobile.png"
+          alt="coats"
+          class="img-fluid"
+        />
       {/if}
     </MediaQuery>
-    <!-- desktop image -->
-    <MediaQuery query="(min-width: 601px)" let:matches>
+    
+    <MediaQuery query="(min-width: 481px) and (max-width: 1280px)" let:matches>
       {#if matches}
-       
-          <Image
-            src="/images/getreadywrapup-desktop.png"
-            alt="coats"
-            class="img-fluid"
-          />
-        
+        <Image
+          src="/images/getreadywrapup-mobile.png"
+          alt="coats"
+          class="img-fluid"
+        />
+      {/if}
+    </MediaQuery>
+    
+    <MediaQuery query="(max-width: 480px)" let:matches>
+      {#if matches}
+        <Image
+          src="/images/getreadywrapup-desktop.png"
+          alt="coats"
+          class="img-fluid"
+        />
       {/if}
     </MediaQuery>
   </div>
 </section>
-
-<!-- test -->
-<MediaQuery query="(min-width: 1281px)" let:matches>
-	{#if matches}
-	<Image
-            src="/images/getreadywrapup-mobile.png"
-            alt="coats"
-            class="img-fluid"
-          />
-	{/if}
-</MediaQuery>
-
-<MediaQuery query="(min-width: 481px) and (max-width: 1280px)" let:matches>
-	{#if matches}
-	<Image
-            src="/images/getreadywrapup-mobile.png"
-            alt="coats"
-            class="img-fluid"
-          />
-	{/if}
-</MediaQuery>
-
-<MediaQuery query="(max-width: 480px)" let:matches>
-	{#if matches}
-	<Image
-            src="/images/getreadywrapup-desktop.png"
-            alt="coats"
-            class="img-fluid"
-          />
-	{/if}
-</MediaQuery>
 
 <!----------------STYLE----------------------->
 <style>
@@ -148,7 +122,7 @@
     h1 {
       font-size: 70px;
       margin-bottom: 33px;
-      width: 478px
+      width: 478px;
     }
     p {
       font-size: 24px;
