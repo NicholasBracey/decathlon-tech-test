@@ -2,7 +2,6 @@
   export let heroBannerData = {};
   const { HEADING, DECRIPTION, URL, CTA } = heroBannerData;
   import MediaQuery from "../helpers/MediaQuery.svelte";
-  import Image from "svelte-image";
   import InlineSVG from "svelte-inline-svg";
   $: attributes = {
     viewBox: "6 2 24 24",
@@ -22,33 +21,28 @@
         </a>
       </button>
     </div>
-    <MediaQuery query="(min-width: 1281px)" let:matches>
-      {#if matches}
-        <Image
-          src="/images/getreadywrapup-desktop.png"
-          alt="coats"
-          class="img-fluid"
-        />
-      {/if}
-    </MediaQuery>
-
-    <MediaQuery query="(min-width: 481px) and (max-width: 1280px)" let:matches>
-      {#if matches}
-        <Image
-          src="/images/getreadywrapup-desktop.png"
-          alt="coats"
-          class="img-fluid"
-        />
-      {/if}
-    </MediaQuery>
-
+    <!-- mobile image -->
     <MediaQuery query="(max-width: 480px)" let:matches>
       {#if matches}
-        <Image
-          src="/images/getreadywrapup-mobile.png"
-          alt="coats"
-          class="img-fluid"
-        />
+        <div class="col-6">
+          <img
+            src="/images/getreadywrapup-mobile.png"
+            alt="coats"
+            class="img-fluid"
+          />
+        </div>
+      {/if}
+    </MediaQuery>
+    <!-- desktop image -->
+    <MediaQuery query="(min-width: 481px)" let:matches>
+      {#if matches}
+      <div class="col-6">
+          <img
+            src="/images/getreadywrapup-desktop.png"
+            alt="coats"
+            class="img-fluid"
+          />
+        </div>
       {/if}
     </MediaQuery>
   </div>
@@ -63,7 +57,11 @@
   .banner {
     width: 100%;
   }
+  :global(.mob-img) {
+    width: 160px;
+  }
   .banner-copy {
+    width: 160px;
     padding: 0 0rem 0rem 1rem;
     font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   }

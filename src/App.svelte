@@ -1,5 +1,5 @@
 <script>
-  import Meta from "./components/Meta.svelte";
+  import Meta from "./helpers/Meta.svelte";
   const metadata = {
     title: "Decathlon Tech Test",
     description: "tech test homepage build",
