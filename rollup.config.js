@@ -46,12 +46,17 @@ export default {
     svelte({
       // svelte-image processing
       preprocess: {
-        ...image(),
+        ...image({
+          placeholder: "blur",
+        }),
       },
       compilerOptions: {
         // enable run-time checks when not in production
         dev: !production,
       },
+    }),
+    copy({
+      targets: [{ src: 'static/g', dest: 'public' }],
     }),
     // we'll extract any component CSS out into
     // a separate file - better for performance

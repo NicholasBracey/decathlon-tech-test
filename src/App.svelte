@@ -5,7 +5,6 @@
   import Banner from "./components/Banner.svelte";
   import DATA from "./data/data";
   import "swiper/swiper-bundle.css";
-  console.log(DATA);
 </script>
 
 <svelte:head>

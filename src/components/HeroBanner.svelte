@@ -23,29 +23,27 @@
       </button>
     </div>
     <!-- mobile image -->
-    <MediaQuery query="(max-width: 480px)" let:matches>
+    <MediaQuery query="(min-width: 0px) and (max-width: 480px)" let:matches>
       {#if matches}
-        <div class="mobile-banner-img">
+        
           <Image
-            src="images/getreadywrapup-mobile.png"
+            src="/images/getreadywrapup-mobile.png"
             alt="coats"
             class="img-fluid"
-            ratio="125%"
           />
-        </div>
+        
       {/if}
     </MediaQuery>
     <!-- desktop image -->
     <MediaQuery query="(min-width: 481px)" let:matches>
       {#if matches}
-        <div class="desktop-banner-img">
+       
           <Image
-            src="images/getreadywrapup-desktop.png"
+            src="/images/getreadywrapup-desktop.png"
             alt="coats"
             class="img-fluid"
-            ratio="60%"
           />
-        </div>
+        
       {/if}
     </MediaQuery>
   </div>
@@ -60,13 +58,8 @@
   .banner {
     width: 100%;
   }
-  .mobile-banner-img {
-    width: 50%;
-  }
   .banner-copy {
-    width: 50%;
-    height: 100%;
-    padding: 2rem 1rem;
+    padding: 0 0rem 0rem 1rem;
     font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   }
   h1 {
@@ -116,9 +109,6 @@
     section {
       background-image: url("/images/bg-placeholder-desktop.png");
       padding: 0 3rem;
-    }
-    .desktop-banner-img {
-      width: 65%;
     }
     .banner-copy {
       width: 35%;
