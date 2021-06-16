@@ -23,7 +23,7 @@
       </button>
     </div>
     <!-- mobile image -->
-    <MediaQuery query="(min-width: 0px) and (max-width: 480px)" let:matches>
+    <MediaQuery query="(max-width: 480px)" let:matches>
       {#if matches}
         
           <Image
