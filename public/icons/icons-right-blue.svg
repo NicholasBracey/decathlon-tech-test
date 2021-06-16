@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <path id="dihouertoa" d="M6.442 12.443L9.877 9 6.442 5.558 7.5 4.5 12 9 7.5 13.5z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g transform="translate(-89 -587) translate(15 349) translate(0 74) translate(16 92) translate(0 72) translate(58)">
+                                <mask id="omlgvqkxkb" fill="#fff">
+                                    <use xlink:href="#dihouertoa"/>
+                                </mask>
+                                <use fill="#000" fill-rule="nonzero" xlink:href="#dihouertoa"/>
+                                <path fill="#0082C3" d="M0 0H18V18H0z" mask="url(#omlgvqkxkb)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
