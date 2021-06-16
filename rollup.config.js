@@ -5,7 +5,6 @@ import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
 import css from "rollup-plugin-css-only";
 import copy from "rollup-plugin-copy";
-import image from "svelte-image";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -44,12 +43,6 @@ export default {
   },
   plugins: [
     svelte({
-      // svelte-image processing
-      preprocess: {
-        ...image({
-          placeholder: "blur",
-        }),
-      },
       compilerOptions: {
         // enable run-time checks when not in production
         dev: !production,

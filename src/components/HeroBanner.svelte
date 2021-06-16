@@ -11,7 +11,7 @@
 <!----------------MARKUP----------------------->
 <section>
   <div class="banner d-flex align-items-center justify-content-center">
-    <div class="banner-copy">
+    <div class="banner-copy col-6 col-md-4">
       <h1>{HEADING}</h1>
       <p>{DECRIPTION}</p>
       <button>
@@ -24,7 +24,7 @@
     <!-- mobile image -->
     <MediaQuery query="(max-width: 480px)" let:matches>
       {#if matches}
-        <div class="col-6">
+        <div class="col-6 col-md-4">
           <img
             src="/images/getreadywrapup-mobile.png"
             alt="coats"
@@ -36,7 +36,7 @@
     <!-- desktop image -->
     <MediaQuery query="(min-width: 481px)" let:matches>
       {#if matches}
-      <div class="col-6">
+      <div class="col-6 col-md-8">
           <img
             src="/images/getreadywrapup-desktop.png"
             alt="coats"
@@ -57,13 +57,9 @@
   .banner {
     width: 100%;
   }
-  :global(.mob-img) {
-    width: 160px;
-  }
   .banner-copy {
-    width: 160px;
-    padding: 0 0rem 0rem 1rem;
     font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+    padding-left: 1rem;
   }
   h1 {
     text-align: left;
