@@ -7,7 +7,7 @@
 <section class="container">
   <div class="banner-experience">
     <div class="banner-experience-bg">
-      <h3>{HEADING}</h3>
+      <h3 class="title">{HEADING}</h3>
     </div>
   </div>
 </section>
